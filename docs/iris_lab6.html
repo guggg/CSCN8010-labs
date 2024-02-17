@@ -15947,12 +15947,12 @@ In conclusion, the target variable has a high correlation with the width and len
 </div>
 </div>
 </div>
-</div><div  class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[331]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[338]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">predict_process_attributes</span> <span class="o">=</span> <span class="p">[</span>
@@ -15991,11 +15991,88 @@ In conclusion, the target variable has a high correlation with the width and len
         <span class="p">]</span>
 
         <span class="n">location</span> <span class="o">+=</span> <span class="mi">1</span>
+        
+<span class="nb">print</span><span class="p">(</span><span class="n">df_predict_process_1</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_predict_process_2</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_predict_process_3</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_predict_process_4</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>   instance_number                   probability_of_virginica  prediction   
+0               14   [0.7406244235640198, 0.2593755764359802]           0  \
+1              131  [0.02883867429835585, 0.9711613257016442]           1   
+2               42  [0.9835882699311171, 0.01641173006888283]           0   
+3              146   [0.49052004392550796, 0.509479956074492]           1   
+4              102  [0.14463068722429862, 0.8553693127757014]           1   
+
+   ground_truth  
+0             0  
+1             1  
+2             0  
+3             1  
+4             1  
+   instance_number                   probability_of_virginica  prediction   
+0               14   [0.7986418592387798, 0.2013581407612201]           0  \
+1              131  [0.03859219219241383, 0.9614078078075862]           1   
+2               42   [0.9843491407341254, 0.0156508592658746]           0   
+3              146     [0.455053393332046, 0.544946606667954]           1   
+4              102   [0.1485799375040382, 0.8514200624959618]           1   
+
+   ground_truth  
+0             0  
+1             1  
+2             0  
+3             1  
+4             1  
+   instance_number                      probability_of_virginica  prediction   
+0               14   [0.9999955632879963, 4.436712003632215e-06]           0  \
+1              131    [0.010412369942058297, 0.9895876300579417]           1   
+2               42  [0.9999889691479497, 1.1030852050298158e-05]           0   
+3              146        [0.388701745232817, 0.611298254767183]           1   
+4              102       [0.03960537994563995, 0.96039462005436]           1   
+
+   ground_truth  
+0             0  
+1             1  
+2             0  
+3             1  
+4             1  
+   instance_number                      probability_of_virginica  prediction   
+0               14  [0.9999981314673233, 1.8685326767423686e-06]           0  \
+1              131    [0.016616660957175622, 0.9833833390428244]           1   
+2               42   [0.9999951541625379, 4.845837462113745e-06]           0   
+3              146     [0.27422719650145344, 0.7257728034985466]           1   
+4              102     [0.03134614576715511, 0.9686538542328449]           1   
+
+   ground_truth  
+0             0  
+1             1  
+2             0  
+3             1  
+4             1  
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
